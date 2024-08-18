@@ -1,0 +1,44 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container containerDestaque">
+        <div class="containerConteudo">
+            <div class="containerInformacoes">
+                <div class="containerTexto">
+                    <h1>Sorteador<span class="containerTextoPrincipal"> de Números</span></h1>
+                    <div class="containerCampo">
+                        <label class="textoParagrafo">Quantidade de Números:</label>
+                        <input class="containerInput" id="quantidade" type="number" min="1">
+                </div>
+
+                <div class="containerCampo">
+                    <label class="textoParagrafo">Do Numero:</label>
+                    <input class="containerInput" id="de" type="number" min="1">
+                </div>
+
+                <div class="containerCampo">
+                    <label class="textoParagrafo">Até:</label>
+                    <input class="containerInput" id="ate" type="number" min="1">
+                </div>
+            </div>
+            <div class="chuteContainerBotoes">
+                <button onclick="sortear()" id="btn-sortear" class="containerBotao"><b>Sortear</b></button>
+                <button onclick="reiniciar()" id="btn-reiniciar" class="containerBotaoDesabilitado"><B>Reiniciar</B></button>
+            </div>
+
+            <div class="containerTexto" id="resultado">
+                <label class="textoParagrafo"><b>Numero(s) Sorteados:</b></label>
+            </div>
+            <div class="container" id="numberContainer"></div>
+            <div class="containerCirculos" id="resultadosNumeros"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

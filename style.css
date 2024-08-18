@@ -1,0 +1,102 @@
+body {
+    background-color: gray;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100hv;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.containerConteudo {
+    max-width: 600px;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.containerTexto h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.containerCampo {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.textoParagrafo {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.containerInput {
+    padding: 10px;
+    font-size: 1em;
+}
+
+.chuteContainerBotoes {
+    margin-top: 20px;
+}
+
+.containerboTao,
+.containerBotaoDesabilitado {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.containerBotaoDesabilitado {
+    background-color: rgb(27, 26, 26);
+    cursor: not-allowed;
+}
+
+.containerDestaque {
+    background-color: rgba(0, 0, 0, 0.603);
+    border: 2px solid ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    height: 95%;
+}
+
+.h1 {
+    height: 50vh;
+}
+
+.circle {
+    width: 50px; /* Tamanho fixo do círculo */
+    height: 50px; /* Tamanho fixo do círculo */
+    display: flex;
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    align-items: center; /* Centraliza o texto verticalmente */
+    background-color: black;
+    color: white;
+    border-radius: 50%; /* Formato circular */
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold;
+    text-align: center; /* Centraliza o texto */
+    margin: 2px 5px; /* Espaçamento entre círculos */
+    overflow: hidden; /* Oculta o texto que ultrapassa o círculo */
+    line-height: 1; /* Ajusta a altura da linha para centralizar o texto */
+}
+
+.containerCirculos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.containerCirculos .circle:nth-child(n+101) {
+    display: none;
+}
